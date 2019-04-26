@@ -4,35 +4,30 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "61659b9581b18f4237c9003cc5a53d94",
+    "content-hash": "92a81d2165cc20b26d6b6a0a89a20e32",
     "packages": [
         {
             "name": "adldap2/adldap2",
-            "version": "v10.0.8",
+            "version": "v8.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Adldap2/Adldap2.git",
-                "reference": "2865b4dfcd2647fecf3692d6a9a2a83c0770a0f7"
+                "reference": "54722408c68f12942fcbf4a1b666d90a178ddc5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Adldap2/Adldap2/zipball/2865b4dfcd2647fecf3692d6a9a2a83c0770a0f7",
-                "reference": "2865b4dfcd2647fecf3692d6a9a2a83c0770a0f7",
+                "url": "https://api.github.com/repos/Adldap2/Adldap2/zipball/54722408c68f12942fcbf4a1b666d90a178ddc5c",
+                "reference": "54722408c68f12942fcbf4a1b666d90a178ddc5c",
                 "shasum": ""
             },
             "require": {
                 "ext-ldap": "*",
-                "illuminate/contracts": "~5.0",
-                "php": ">=7.0",
-                "psr/log": "~1.1",
-                "tightenco/collect": "~5.0"
+                "illuminate/support": "~5.0",
+                "php": ">=5.5.9"
             },
             "require-dev": {
-                "mockery/mockery": "~1.0",
-                "phpunit/phpunit": "~6.0"
-            },
-            "suggest": {
-                "ext-fileinfo": "fileinfo is required when retrieving user encoded thumbnails"
+                "mockery/mockery": "~0.9|~1.0",
+                "phpunit/phpunit": "~4.8|~5.6"
             },
             "type": "library",
             "autoload": {
@@ -61,31 +56,30 @@
                 "ldap",
                 "windows"
             ],
-            "time": "2019-04-06T17:09:01+00:00"
+            "time": "2018-04-19T15:06:54+00:00"
         },
         {
             "name": "adldap2/adldap2-laravel",
-            "version": "v6.0.5",
+            "version": "v4.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Adldap2/Adldap2-Laravel.git",
-                "reference": "a14d5040bfec62a2e57718d3565341333e4068f2"
+                "reference": "a5196cce3b5394d7b5e84eb68b38260cb9f0fd3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Adldap2/Adldap2-Laravel/zipball/a14d5040bfec62a2e57718d3565341333e4068f2",
-                "reference": "a14d5040bfec62a2e57718d3565341333e4068f2",
+                "url": "https://api.github.com/repos/Adldap2/Adldap2-Laravel/zipball/a5196cce3b5394d7b5e84eb68b38260cb9f0fd3c",
+                "reference": "a5196cce3b5394d7b5e84eb68b38260cb9f0fd3c",
                 "shasum": ""
             },
             "require": {
-                "adldap2/adldap2": "^10.0",
-                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
-                "php": ">=7.1"
+                "adldap2/adldap2": "^8.0",
+                "php": ">=7.0"
             },
             "require-dev": {
                 "mockery/mockery": "~1.0",
-                "orchestra/testbench": "~3.7",
-                "phpunit/phpunit": "~7.0"
+                "orchestra/testbench": "~3.2",
+                "phpunit/phpunit": "~6.0"
             },
             "type": "project",
             "extra": {
@@ -115,7 +109,7 @@
                 "laravel",
                 "ldap"
             ],
-            "time": "2019-04-18T16:02:45+00:00"
+            "time": "2018-09-18T14:27:05+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2646,56 +2640,6 @@
             "time": "2019-04-17T14:57:01+00:00"
         },
         {
-            "name": "tightenco/collect",
-            "version": "v5.8.14",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tightenco/collect.git",
-                "reference": "d1d78dbdd8884c35a79f9750743177297e7f31a9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/d1d78dbdd8884c35a79f9750743177297e7f31a9",
-                "reference": "d1d78dbdd8884c35a79f9750743177297e7f31a9",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/var-dumper": ">=3.4 <5"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "nesbot/carbon": "^1.26.3",
-                "phpunit/phpunit": "^7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/Collect/Support/helpers.php",
-                    "src/Collect/Support/alias.php"
-                ],
-                "psr-4": {
-                    "Tightenco\\Collect\\": "src/Collect"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylorotwell@gmail.com"
-                }
-            ],
-            "description": "Collect - Illuminate Collections as a separate package.",
-            "keywords": [
-                "collection",
-                "laravel"
-            ],
-            "time": "2019-04-18T18:52:05+00:00"
-        },
-        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.1",
             "source": {
@@ -2741,6 +2685,44 @@
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "time": "2017-11-27T11:13:29+00:00"
+        },
+        {
+            "name": "uspdev/replicado",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uspdev/replicado.git",
+                "reference": "561eec45fe11122f54c3741226d5ab9707ec3e63"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uspdev/replicado/zipball/561eec45fe11122f54c3741226d5ab9707ec3e63",
+                "reference": "561eec45fe11122f54c3741226d5ab9707ec3e63",
+                "shasum": ""
+            },
+            "require": {
+                "monolog/monolog": "^1.23"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Uspdev\\Replicado\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Gomes Verissimo",
+                    "email": "thiago.verissimo@usp.br",
+                    "homepage": "https://github.com/thiagogomesverissimo"
+                }
+            ],
+            "description": "Classes PHP que consome dados do Replicado USP",
+            "homepage": "https://github.com/uspdev/replicado",
+            "time": "2019-04-24T15:23:54+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -4562,7 +4544,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "uspdev/replicado": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
