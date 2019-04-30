@@ -25,8 +25,8 @@
       @else
       <td><b style="color:red;">{{ $computer['hostname'] }}</b></td>
       <td>{{ $computer['created'] }}</td>
+      <td>{{ $computer['os'] }}</td>
       <td><b style="color:red;">HOSTNAME ERRADO</b></td>
-      <td></td>
       <td></td>
       @endisset
     </tr>
