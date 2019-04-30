@@ -23,6 +23,7 @@ class indexController extends Controller
 
             $hostname = $computer->getDnsHostName();
             $hostname = str_replace(".smbdomain.fflch.usp.br", "", $hostname);
+            $hostname = str_replace("-", "", $hostname);
             if (strstr($hostname, 'sambadc') == true) {
                 continue;
             }
