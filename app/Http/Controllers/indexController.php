@@ -49,7 +49,8 @@ class indexController extends Controller
                     $line['responsavel']  =  $pessoa['codpes'] . ' - ' . $pessoa['nompes']; 
 
                     /*busco ip*/
-                    $line['ip']       = "não";
+                    $line['hostname'] = substr_replace($hostname, '.' , 3, 0);
+                    $line['ip']       = $this->ip($line['hostname']);
                 }
             }
             array_push($computers,$line);
@@ -60,5 +61,9 @@ class indexController extends Controller
 
     private function is_integerable( $v ){
       return is_numeric($v) && +$v === (int)(+$v);
+    }
+
+    private function ip($patrimonio){
+        return "não";
     }
 }
