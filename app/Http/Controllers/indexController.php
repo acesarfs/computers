@@ -7,6 +7,7 @@ use Adldap\Laravel\Facades\Adldap;
 use Carbon\Carbon;
 use Uspdev\Replicado\Bempatrimoniado;
 use Uspdev\Replicado\Pessoa;
+use GuzzleHttp\Client;
 
 class indexController extends Controller
 {
@@ -64,6 +65,12 @@ class indexController extends Controller
     }
 
     private function ip($patrimonio){
-        return "não";
+        $client = new Client();
+        $res = $client->request('POST',"https://copaco.fflch.usp.br/api/equipamentos/{$patrimonio}/ip",     [
+            'json' => [
+                'consumer_deploy_key' => 'admin',
+            ],
+        ]);
+        return $res->getBody()->getContents();
     }
 }
