@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th scope="col">Patrimônio</th>
+      <th scope="col">IP</th>
       <th scope="col">Inserido no domínio em</th>
       <th scope="col">Sistema Operacional</th>
       <th scope="col">Setor</th>
@@ -18,6 +19,7 @@
     <tr>
       @isset($computer['setor'])
       <td>{{ $computer['hostname'] }}</td>
+      <td>{{ $computer['ip'] }}</td>
       <td>{{ $computer['created'] }}</td>
       <td>{{ $computer['os'] }}</td>
       <td>{{ $computer['setor'] }}</td>

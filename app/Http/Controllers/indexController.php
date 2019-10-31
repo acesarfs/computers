@@ -47,6 +47,9 @@ class indexController extends Controller
                     $line['incorporado'] = $pat["dtadocinppat"];
                     $pessoa = Pessoa::dump($pat["codpes"]);
                     $line['responsavel']  =  $pessoa['codpes'] . ' - ' . $pessoa['nompes']; 
+
+                    /*busco ip*/
+                    $line['ip']       = "não";
                 }
             }
             array_push($computers,$line);
